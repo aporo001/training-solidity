@@ -1,4 +1,4 @@
-#1. Create solidity project using hardhat
+# 1. Create solidity project using hardhat
 
 ```
   mkdir training-solidity
@@ -6,7 +6,7 @@
   npx hardhat
 ```
 
-#2 Setup solidity project, trial to deploy and verify contract
+# 2. Setup solidity project, trial to deploy and verify contract
 
 - install hardhat-deploy package
 
@@ -14,7 +14,7 @@
   npm i -D hardhat-deploy
 ```
 
-- add hardhat deploy in hardhat.config.js
+- add hardhat deploy in **hardhat.config.js**
 
 ```
   require("hardhat-deploy");
@@ -33,9 +33,9 @@
 
 ```
 
-- create folder _deploy_
+- create folder **deploy**
 
-- create file _00_deploy_greeter.js_
+- create file **00_deploy_greeter.js**
 
 ```
   module.exports = async ({ getNamedAccounts, deployments }) => {
