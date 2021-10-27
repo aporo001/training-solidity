@@ -11,13 +11,14 @@
 - install hardhat-deploy package
 
 ```
-  npm i -D hardhat-deploy
+  npm i -D hardhat-deploy hardhat-deploy-ethers
 ```
 
 - add hardhat deploy in **hardhat.config.js**
 
 ```
   require("hardhat-deploy");
+  require("hardhat-deploy-ethers");
 
   ...
 
