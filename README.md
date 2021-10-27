@@ -124,3 +124,38 @@ and verify
 ```
 
 # 4. Create contract for deposit and withdrawal your token
+
+- create file **MiniChef** in folder **contracts**
+
+```
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.0;
+
+import "@openzeppelin/contracts/token/ERC20/IERC20.sol";
+import "@openzeppelin/contracts/access/Ownable.sol";
+import "@openzeppelin/contracts/utils/math/SafeMath.sol";
+
+contract MiniChef is Ownable {
+  using SafeMath for uint256;
+
+  IERC20 private _fullteamToken;
+
+  mapping(address => uint256) private userAmount;
+
+  constructor(address fullteamTokenAddr) {
+    _fullteamToken = IERC20(fullteamTokenAddr);
+  }
+
+  function depositBalance(address user) view public returns(uint256) {
+
+  }
+
+  function deposit(uint256 amount) public {
+
+  }
+
+  function withdrawal(uint256 amount) public {
+
+  }
+}
+```
